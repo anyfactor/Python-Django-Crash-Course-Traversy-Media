@@ -1,0 +1,16 @@
+{% extends 'post/layout.html' %}
+
+{% block content %}
+<h3> Hey, this is the text you will input in the layout, my dude </h3>
+<h5>{{post.title}}</h5>
+
+<div class="card">
+    <div class="card-content">
+        {{post.body}}
+    </div>
+    <div class="card-action">
+        {{post.created_at}}
+    </div>
+</div>
+<a href="/" class="btn">Go back</a>
+{% endblock %}
